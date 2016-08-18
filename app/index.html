@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Henning's ShopFront DAPP</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>Henning's - </h1>
+  <h2>ShopFront DAPP</h2>
+  <h3>Coinbase balance <span class="black"><span id="cb_balance"></span></span></h3>
+  <h3>Contract balance <span class="black"><span id="c_balance"></span></span></h3>
+
+  <br><br>
+  <h3>Submit Order</h3>
+  <label for="product">Product:</label><input type="text" id="product" placeholder=""></input>
+  <br><br>
+  <label for="quantity">Quantity:</label><input type="text" id="quantity" placeholder="e.g., 3"></input>
+  <br><br>
+  <label for="buyer">Account:</label><input type="text" id="buyer" placeholder="e.g., 0xcaf71a4c48d039a1bd59b176bfbcd3355077bce5"></input>
+  <br><br>
+  <button id="send" onclick="getItems()">Get products</button>
+  <button id="send" onclick="newItem()">New product</button>
+  <button id="send" onclick="deleteItem()">Delete product</button>
+  <button id="send" onclick="getBalance()">Get balance</button>
+  <br><br>
+  <span id="status"></span>
+</body>
+</html>
